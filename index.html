@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rateCard">
+        <div class="content">
+          <img src="./assets/icon-star.svg" alt="" id="star" />
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form id="rateForm" method="GET" class="boxed" action="./thanks.html">
+            <div class="rate">
+              <input type="hidden" name="rateCounts" value="5">
+
+              <input type="radio" id="1" name="selectedRate" class="rates" value="1" required/>
+              <label for="1">1</label>
+  
+              <input type="radio" id="2" name="selectedRate" class="rates" value="2" required/>
+              <label for="2">2</label>
+  
+              <input type="radio" id="3" name="selectedRate" class="rates" value="3" required/>
+              <label for="3">3</label>
+  
+              <input type="radio" id="4" name="selectedRate" class="rates" value="4" required/>
+              <label for="4">4</label>
+  
+              <input type="radio" id="5" name="selectedRate" class="rates" value="5" required/> 
+              <label for="5">5</label>
+            </div>  
+            <input type="submit" value="SUBMIT" class="submitButton" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

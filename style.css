@@ -1,0 +1,107 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+}
+
+h2 {
+  color: var(--White);
+}
+
+p {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--LightGrey);
+}
+.container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.rateCard {
+  height: 371px;
+  width: 380px;
+  border-radius: 22px;
+  background-color: var(--DarkBlue);
+  position: relative;
+}
+
+.content {
+  padding: 32px 37px;
+}
+
+#star {
+  padding: 10px;
+  border-radius: 100%;
+  background-color: hsla(216, 12%, 54%, 0.178);
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.rate label {
+  display: inline-block;
+  width: 20px;
+  padding: 15px;
+  background-color: hsla(216, 12%, 54%, 0.178);
+  color: var(--LightGrey);
+  border-radius: 50%;
+}
+
+.rate label:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.rate input[type="radio"] {
+  display: none;
+}
+
+.rate input[type="radio"]:checked + label {
+  background-color: var(--LightGrey);
+  color: var(--White);
+}
+
+.submitButton {
+  text-align: center;
+  padding: 10px;
+  background: var(--Orange);
+  border-radius: 19px;
+  text-transform: uppercase;
+  color: var(--White);
+  font-weight: 700;
+  margin-top: 30px;
+  width: 100%;
+  border: none;
+}
+
+.submitButton:hover {
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+
+
+.thanksContent{
+  text-align: center;
+}
+
+#rateChoice{
+  margin: 0 68px;
+  margin-top: 18px;
+  border-radius: 10px;
+  color: var(--Orange);
+  background-color: hsla(216, 12%, 54%, 0.178);
+}
