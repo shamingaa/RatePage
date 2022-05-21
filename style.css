@@ -22,13 +22,13 @@ p {
 }
 .container {
   position: absolute;
-  top: 25%;
+  top: 22%;
   left: 50%;
   transform: translate(-50%);
 }
 
 .rateCard {
-  height: 461px;
+  height: 365px;
   width: 380px;
   border-radius: 22px;
   background-color: var(--DarkBlue);
